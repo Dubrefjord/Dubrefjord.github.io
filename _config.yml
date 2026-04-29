@@ -1,31 +1,37 @@
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
-minimal_mistakes_skin: "default"  # options: air, aqua, contrast, dark, dirt, mint, neon, plum, sunrise
+minimal_mistakes_skin: "default"
 
-# Site settings
-title: "Your Blog Name"
-name: "Your Name"
-description: "A short tagline for your blog."
-url: "https://yourusername.github.io"  # the base hostname
-baseurl: ""  # leave empty for user site; set to "/blog" for project site
+title: "Dubrefjord Consulting"
+masthead_title: "Dubrefjord Consulting"
+name: "Dennis Dubrefjord"
+description: "AI-empowered application security and offensive security. Consulting and notes from Dennis Dubrefjord."
+url: "https://dubrefjord.com"
+baseurl: ""
+repository: "Dubrefjord/Dubrefjord.github.io"
 
-# Logo (we'll add the file in step 4)
-logo: "/assets/images/logo.png"
+logo: "/assets/images/DC-original.svg"
 
-# Author info shown in sidebar
 author:
-  name: "Your Name"
-  avatar: "/assets/images/bio-photo.jpg"  # optional
-  bio: "One-line bio."
+  name: "Dennis Dubrefjord"
+  bio: "AI-empowered AppSec and offensive security. Founder of Dubrefjord Consulting. OWASP Gothenburg chapter lead."
   location: "Göteborg, Sweden"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:you@example.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/dennis-dubrefjord/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/yourusername"
+      url: "https://github.com/Dubrefjord"
 
-# Reading defaults
+footer:
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/dennis-dubrefjord/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Dubrefjord"
+
 defaults:
   - scope:
       path: ""
@@ -37,7 +43,6 @@ defaults:
       share: true
       related: true
 
-# Plugins (these are whitelisted on GitHub Pages)
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -45,6 +50,5 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-# Pagination
 paginate: 5
 paginate_path: /page:num/
