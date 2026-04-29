@@ -1,0 +1,83 @@
+---
+# Front matter is required, even if empty.
+---
+
+/* =========================================================
+   Dubrefjord Consulting — Brand palette
+   ========================================================= */
+$brand-navy-deep:  #1A1C34;  // body text, deepest accents
+$brand-navy:       #262D51;  // primary brand color
+$brand-indigo:     #444D7C;  // secondary accent / muted UI
+$brand-cream:      #F7F5F2;  // main background
+$brand-cream-soft: #EFF4EE;  // alt background (code blocks, callouts)
+$brand-red:        #E63946;  // emphasis accent — use sparingly
+
+/* =========================================================
+   Theme variable overrides
+   Must come BEFORE the @import lines below.
+   ========================================================= */
+
+/* Page-level */
+$background-color:      $brand-cream;
+$text-color:            $brand-navy-deep;
+$border-color:          mix($brand-indigo, $brand-cream, 20%);
+
+/* Primary brand color — drives links, buttons, active states */
+$primary-color:         $brand-navy;
+
+/* Links: navy by default, red on hover for a subtle pop */
+$link-color:            $primary-color;
+$link-color-hover:      $brand-red;
+$link-color-visited:    mix(#000, $primary-color, 15%);
+
+/* Masthead (top nav) */
+$masthead-link-color:           $primary-color;
+$masthead-link-color-hover:     $brand-red;
+$navicon-link-color-hover:      $brand-red;
+
+/* Code blocks — soft cream so they sit gently on the page */
+$code-background-color:         $brand-cream-soft;
+$code-background-color-dark:    $brand-navy-deep;
+
+/* Notices — red is your "danger", navy your "info" */
+$danger-color:   $brand-red;
+$info-color:     $brand-navy;
+$success-color:  #3a7d44;   // kept generic green; tweak if you want
+$warning-color:  #d68c2a;   // kept generic amber; tweak if you want
+
+/* Selection highlight (when readers select text) */
+::selection {
+  background-color: rgba($brand-red, 0.25);
+  color: $brand-navy-deep;
+}
+
+/* =========================================================
+   Import skin + theme (must come AFTER the overrides)
+   ========================================================= */
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* =========================================================
+   Small post-theme tweaks
+   These need to come AFTER the @imports because they override
+   compiled rules rather than variables.
+   ========================================================= */
+
+/* Blockquote: red left-border = your signature deck pattern */
+blockquote {
+  border-left-color: $brand-red;
+  font-style: italic;
+  color: mix($brand-navy-deep, $brand-cream, 80%);
+}
+
+/* Page title underline — subtle navy band */
+.page__title {
+  border-bottom: 2px solid $brand-navy;
+  padding-bottom: 0.4em;
+}
+
+/* Inline code — slightly tinted so it stands out from prose */
+code {
+  background-color: $brand-cream-soft;
+  color: $brand-navy-deep;
+}

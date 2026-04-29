@@ -1,0 +1,50 @@
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "default"  # options: air, aqua, contrast, dark, dirt, mint, neon, plum, sunrise
+
+# Site settings
+title: "Your Blog Name"
+name: "Your Name"
+description: "A short tagline for your blog."
+url: "https://yourusername.github.io"  # the base hostname
+baseurl: ""  # leave empty for user site; set to "/blog" for project site
+
+# Logo (we'll add the file in step 4)
+logo: "/assets/images/logo.png"
+
+# Author info shown in sidebar
+author:
+  name: "Your Name"
+  avatar: "/assets/images/bio-photo.jpg"  # optional
+  bio: "One-line bio."
+  location: "Göteborg, Sweden"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:you@example.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/yourusername"
+
+# Reading defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      related: true
+
+# Plugins (these are whitelisted on GitHub Pages)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# Pagination
+paginate: 5
+paginate_path: /page:num/
