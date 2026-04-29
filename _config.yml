@@ -13,7 +13,7 @@ logo: "/assets/images/DC-original.svg"
 
 author:
   name: "Dennis Dubrefjord"
-  bio: "Application and Offensive Security. Lately hooked on the intersection between AI and security. Founder of Dubrefjord Consulting. OWASP Gothenburg chapter lead."
+  bio: "AI-empowered AppSec and offensive security. Founder of Dubrefjord Consulting. OWASP Gothenburg chapter lead."
   location: "Göteborg, Sweden"
   links:
     - label: "LinkedIn"
@@ -40,7 +40,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      share: true
+      share: false
       related: true
 
 plugins:
