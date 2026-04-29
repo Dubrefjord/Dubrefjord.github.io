@@ -1,0 +1,17 @@
+<div class="page__footer">
+  <footer>
+    {% include footer/custom.html %}
+    <div class="page__footer-follow">
+      <ul class="social-icons">
+        {% if site.footer.links %}
+          {% for link in site.footer.links %}
+            {% if link.label and link.url %}
+              <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"{% if link.label %} aria-label="{{ link.label }}"{% endif %}>{% if link.icon %}<i class="{{ link.icon }}"></i>{% else %}<i class="fas fa-link"></i>{% endif %} {{ link.label }}</a></li>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      </ul>
+    </div>
+    <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}{% if site.name %}. {{ site.data.ui-text[site.locale].powered_by | default: "All rights reserved." }}{% endif %}</div>
+  </footer>
+</div>
