@@ -106,3 +106,76 @@ div.highlighter-rouge {
   border: 1px solid mix($brand-indigo, $brand-cream, 20%);
   border-radius: 4px;
 }
+
+/* =========================================================
+   Rouge syntax highlighter — token colors readable on cream.
+   The default skin uses light text that disappears on our
+   warm background. These overrides keep tokens in the brand
+   palette with strong contrast.
+   ========================================================= */
+.highlight,
+.highlight pre,
+figure.highlight {
+  color: $brand-navy-deep !important;
+}
+
+.highlight {
+  /* Comments — muted grey, italic */
+  .c, .c1, .cm, .cs, .cp, .cd { color: #6c757d !important; font-style: italic; }
+
+  /* Keywords — navy bold */
+  .k, .kc, .kd, .kn, .kp, .kr, .kt, .kv { color: $brand-navy !important; font-weight: 600; }
+
+  /* Strings — deep green, distinct from navy */
+  .s, .s1, .s2, .sa, .sb, .sc, .dl, .sd, .se, .sh, .si, .sx, .sr, .ss { color: #2d6a4f !important; }
+
+  /* Numbers — purple */
+  .m, .mb, .mf, .mh, .mi, .il, .mo, .mx { color: #9d4edd !important; }
+
+  /* Operators — brand red, used sparingly */
+  .o, .ow { color: $brand-red !important; }
+
+  /* Function and method names — indigo */
+  .nf, .fm { color: $brand-indigo !important; font-weight: 600; }
+
+  /* Builtins, types, classes — indigo */
+  .nb, .bp, .nc, .ne, .nn { color: $brand-indigo !important; }
+
+  /* Variables — deep navy */
+  .nv, .vc, .vg, .vi, .vm { color: $brand-navy-deep !important; }
+
+  /* HTML/XML tag names — navy bold */
+  .nt { color: $brand-navy !important; font-weight: 600; }
+
+  /* Attribute names — indigo */
+  .na { color: $brand-indigo !important; }
+
+  /* Punctuation — deep navy */
+  .p, .pi { color: $brand-navy-deep !important; }
+
+  /* Errors — brand red */
+  .err { color: $brand-red !important; background: none !important; }
+
+  /* Generic / diff / markdown */
+  .gh, .gu { color: $brand-navy !important; font-weight: 600; }
+  .gd      { color: $brand-red !important; }
+  .gi      { color: #2d6a4f !important; }
+  .gs      { font-weight: 600; }
+  .ge      { font-style: italic; }
+
+  /* Line numbers (if used) */
+  .lineno  { color: mix($brand-indigo, $brand-cream-soft, 50%) !important; }
+}
+
+/* =========================================================
+   Expand .full elements rightward only — left edge stays
+   aligned with the text column, right edge bleeds outward.
+   ========================================================= */
+.page__content {
+  .full {
+    margin-left: 0;
+    margin-right: -4em;
+    width: calc(100% + 4em);
+    max-width: none;
+  }
+}
