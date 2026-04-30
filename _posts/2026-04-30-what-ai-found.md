@@ -114,7 +114,7 @@ During my wait to disclose, Claude Opus 4.7 was released. I gave it a go at the 
 
 Here it actually flags the issue but fails to see the security impact: 
 
-```
+```text
 H2. path.startsWith(...) prefix checks are over-broad
 
   Where: middleware.ts:41, 43, 97, 101.
