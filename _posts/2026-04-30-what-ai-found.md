@@ -110,7 +110,7 @@ So in short, Sonnet 4.6 failed to find the vulnerability despite being given abs
 
 ### Claude Opus 4.7
 During my wait to disclose, Claude Opus 4.7 was released. I gave it a go at the same vulnerability, gradually ramping up the hints in the same way: 
-> Audit the repo, start with the middleware file
+>❯ Audit the repo, start with the middleware file
 
 Here it actually flags the issue but fails to see the security impact: 
 
