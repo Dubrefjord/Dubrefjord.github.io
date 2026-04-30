@@ -151,7 +151,7 @@ And it finally found the vulnerability! To its credit, when it found the vulnera
 
 So Opus 4.7 did find the issue, but originally ruled it out despite repeated prompts to dig deeper. It had to be given absurd levels of guidance to succeed. I am sceptical that a human or harness that did not already know about the vulnerability would be able to provide that.
 
-Full chat logs available at [GitHub](https://github.com/Dubrefjord/...).
+Full chat logs available at Github: [Sonnet](https://raw.githubusercontent.com/Dubrefjord/Dubrefjord.github.io/refs/heads/main/assets/AI_logs/reproduce-zammad-redirect-sonnet.md), [Opus](https://raw.githubusercontent.com/Dubrefjord/Dubrefjord.github.io/refs/heads/main/assets/AI_logs/reproduce-zammad-redirect-opus.md).
 
 # Conclusion
 
