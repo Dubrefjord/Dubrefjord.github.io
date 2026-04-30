@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_label: "Contents"
 ---
-# Intro
+
 Yesterday, the second Open Technology Fund pentest I have done was published. That means I can finally share some results of my exploration in the intersection of AI and security, namely using AI for pentesting!
 
 # Background
