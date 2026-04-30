@@ -44,12 +44,14 @@ In `conformRecoverText()`, it is used to create the URL in the email that gets s
 
 ![Uwazi password reset email generation](/assets/images/posts/2026-04-30-what-ai-found/uwazi_pw_email.png){: .full}
 *Uwazi password reset email generation*
+
 This means that if `domain` is attacker controlled, they can add their own domain instead of the Uwazi one. If the user clicks the email, the reset token gets sent to the attacker server.
 
 But, surely this variable is defined from an environment variable or something? It turns out, if you trace the calls backwards, it comes from the `host` header in the request. 
 
 ![Uwazi password reset email generation](/assets/images/posts/2026-04-30-what-ai-found/getdomain.png){: .full}
 *Domain gets created from the host header*
+
 This means an attacker could simply send a password reset request for another user with an attacker controlled domain in their host header. The victim would recieve the legitimate looking Uwazi email, but clicking the link would compromise their account. 
 
 Digging further into it, it turns out the same pattern existed for the login lockout functionality. Making six failed login attempts (wrong password or MFA) locks the account and sends an email to the owner with a link to unlock their account. 
