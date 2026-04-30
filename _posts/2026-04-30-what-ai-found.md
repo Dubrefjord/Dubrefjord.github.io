@@ -11,7 +11,7 @@ toc: true
 toc_label: "Contents"
 ---
 
-Yesterday, the second Open Technology Fund pentest I have done was published. That means I can finally share some results of my exploration in the intersection of AI and security, namely using AI for pentesting!
+Yesterday, the second Open Technology Fund pentest I have done was published. That means I can finally share some results of my exploration at the intersection of AI and security, namely using AI for pentesting!
 
 # Background
 First, a brief background. During 2024 I conducted two pentests (manually, no AI) of open source applications via Open Technology Fund. The first one was Uwazi ([report available](https://www.opentech.fund/security-safety-audits/uwazi-security-audit/)), a security critical system for managing eyewitness videos, testimonies, and other human rights documentation for human rights defenders, Journalists, activists, and researchers. Uwazi had been pentested three times previously.
