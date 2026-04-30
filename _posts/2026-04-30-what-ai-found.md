@@ -155,10 +155,16 @@ Full chat logs available at [GitHub](https://github.com/Dubrefjord/...).
 
 # Conclusion
 
+Based on my exploration, I think it is clear that AI can provide a lot of value when it comes to discovering vulnerabilities. It can find issues that pentesters typically miss because of assumptions made under time pressure. However, current frontier models are not good enough to replace humans. Instead, I think AI assisted pentesting is the way to go. It remains to be seen if future model advancements affect this. 
 
+There are some challenges to solve:
+- Pentesting inherently deals with secret information, such as closed source code and of course the vulnerabilities themselves. We need to use AI in a way that doesn't compromise the customer. Either that can be done by running open source AI models on infrastructure we own, or we need to sign an agreement with an AI vendor with guarantees, and have the customers approve of us sending their data to the AI vendor.
+- In the ideal world, we would grow confindent in the ability of the AI and harness to find certain classes of vulnerabilites, and notice it lacking in other areas. If one could identify these with some consistency, the human could spend most of their time in the areas where the AI performs poorly and just do a quick pass over the areas where AI excel. If that is possible, huge gains in speed would be possible while remaining or raising the confidence in the findings. 
+
+I think the possible gains brought by AI warrant solving the challenges above, I think it will be really interesting to see how pentesting firms do so.
 
 # Thanks
-- Uwazi top concern
-- Assured
 
-# Appendix
+A big thank you to Uwazi for allowing me to disclose the vulnerability! Having dealt with them, they are a super professional team who really prioritize securing their systems. Truly a delight to work with. 
+
+My firends at [Assured](https://www.assured.se/) also deserve a big thank you for giving me the opportunity to pentest these systems in the first place. 
