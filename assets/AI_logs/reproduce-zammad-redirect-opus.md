@@ -6,7 +6,7 @@
 │                      ▝▜█████▛▘                     │ Recent activity         │
 │                        ▘▘ ▝▝                       │ No recent activity      │
 │      Opus 4.7 (1M context) · Claude Max ·          │                         │
-│      dubrefjord@protonmail.com's Organization      │                         │
+│      dxxxxxxxxxxxxxl.com's Organization      │                         │
 │                ~/repos/app/apps/app                │                         │
 ╰──────────────────────────────────────────────────────────────────────────────╯
 
